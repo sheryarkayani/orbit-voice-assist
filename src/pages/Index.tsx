@@ -66,7 +66,7 @@ const Index = () => {
         <div className="orbit-container relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#95BF47]/10 text-[#5E8E3E] text-sm font-medium mb-4 animate-fade-in">
+              <div className="inline-flex items-center px-3 py-1 rounded-full bg-orbit-purple/10 text-orbit-purple text-sm font-medium mb-4 animate-fade-in">
                 <Mic size={14} className="mr-2" />
                 AI Voice Assistant for Shopify Stores
               </div>
@@ -82,7 +82,7 @@ const Index = () => {
               </div>
               <div className="mt-8 opacity-0 animate-fade-in stagger-3">
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <span className="flex items-center text-[#5E8E3E]">
+                  <span className="flex items-center text-green-600">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-1">
                       <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                       <polyline points="22 4 12 14.01 9 11.01"></polyline>
@@ -90,7 +90,7 @@ const Index = () => {
                     No credit card required
                   </span>
                   <span className="w-1 h-1 rounded-full bg-gray-300"></span>
-                  <span className="flex items-center text-[#5E8E3E]">
+                  <span className="flex items-center text-green-600">
                     <ShoppingBag size={16} className="mr-1" />
                     Works with any Shopify store
                   </span>
@@ -126,21 +126,18 @@ const Index = () => {
               title="Cut support costs by 40%"
               description="Automate phone support for common queries like order status, shipping details, and returns—saving thousands monthly."
               delay={100}
-              iconColor="text-[#5E8E3E]"
             />
             <BenefitCard 
               icon={Phone}
               title="Handle 500+ daily calls"
               description="Our AI voice assistant answers customer calls 24/7, providing Shopify order information in real-time without human intervention."
               delay={200}
-              iconColor="text-[#5E8E3E]"
             />
             <BenefitCard 
               icon={ShoppingBag}
               title="2-click Shopify integration"
               description="Connect to your Shopify store instantly with our official app. All product, order, and customer data syncs automatically."
               delay={300}
-              iconColor="text-[#5E8E3E]"
             />
           </div>
           
@@ -229,7 +226,7 @@ const Index = () => {
           </div>
           
           <div className="mt-16 text-center opacity-0 reveal-on-scroll">
-            <a href="#case-studies" className="inline-flex items-center text-[#5E8E3E] font-medium hover:text-[#4A7132] transition-colors">
+            <a href="#case-studies" className="inline-flex items-center text-orbit-purple font-medium hover:text-orbit-darkPurple transition-colors">
               Read Shopify success stories
               <ChevronRight size={16} className="ml-1" />
             </a>
@@ -239,7 +236,7 @@ const Index = () => {
 
       {/* CTA Section */}
       <section className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#95BF47] to-[#5E8E3E] opacity-95"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-orbit-purple to-orbit-blue opacity-95"></div>
         <div className="glow-effect glow-purple opacity-20 top-20 right-10"></div>
         <div className="glow-effect glow-blue opacity-20 bottom-20 left-10"></div>
         
@@ -252,7 +249,7 @@ const Index = () => {
               Join hundreds of Shopify brands using AI voice automation to deliver 24/7 customer support while saving $15,000+ per month.
             </p>
             <div className="flex flex-wrap gap-4 justify-center opacity-0 animate-fade-in stagger-2">
-              <button className="rounded-lg font-medium transition-all duration-300 py-4 px-8 inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-[#5E8E3E] shadow-lg hover:shadow-xl">
+              <button className="rounded-lg font-medium transition-all duration-300 py-4 px-8 inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-orbit-purple shadow-lg hover:shadow-xl">
                 Start Free Trial
                 <ArrowRight size={18} />
               </button>
