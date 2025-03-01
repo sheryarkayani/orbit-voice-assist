@@ -21,7 +21,10 @@ import {
   Headphones, 
   Speech, 
   Package,
-  Zap 
+  Zap,
+  MessageSquare,
+  HeadphonesIcon, 
+  Bot
 } from 'lucide-react';
 
 const Index = () => {
@@ -76,6 +79,23 @@ const Index = () => {
               <p className="orbit-subheading opacity-0 animate-fade-in stagger-1">
                 Orbit's voice AI answers calls 24/7, handling order tracking, returns, and FAQs—letting your Shopify store scale support without scaling costs.
               </p>
+              
+              {/* Feature Pills */}
+              <div className="mt-6 flex flex-wrap gap-3 opacity-0 animate-fade-in stagger-1">
+                <div className="inline-flex items-center bg-white/10 backdrop-blur-sm px-3 py-2 rounded-lg border border-white/10">
+                  <ShoppingBag size={16} className="mr-2 text-green-500" />
+                  <span className="text-sm">Shopify Integration</span>
+                </div>
+                <div className="inline-flex items-center bg-white/10 backdrop-blur-sm px-3 py-2 rounded-lg border border-white/10">
+                  <Headphones size={16} className="mr-2 text-blue-400" />
+                  <span className="text-sm">24/7 Phone Support</span>
+                </div>
+                <div className="inline-flex items-center bg-white/10 backdrop-blur-sm px-3 py-2 rounded-lg border border-white/10">
+                  <MessageSquare size={16} className="mr-2 text-purple-400" />
+                  <span className="text-sm">Order Tracking</span>
+                </div>
+              </div>
+              
               <div className="mt-8 flex flex-wrap gap-4 opacity-0 animate-fade-in stagger-2">
                 <Button variant="primary" size="lg" icon>Start Free Trial</Button>
                 <Button variant="outline" size="lg">Book a Demo</Button>
@@ -97,8 +117,25 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="opacity-0 animate-fade-in stagger-3">
+            <div className="opacity-0 animate-fade-in stagger-3 relative">
               <HeroAnimation />
+              
+              {/* Floating Voice Wave Effect */}
+              <div className="absolute -top-6 -right-6 w-16 h-16 bg-orbit-purple/20 rounded-full flex items-center justify-center animate-pulse z-10">
+                <Mic size={24} className="text-orbit-purple" />
+                <div className="absolute inset-0 border-2 border-orbit-purple/30 rounded-full animate-ping"></div>
+              </div>
+              
+              {/* Call Stats */}
+              <div className="absolute -bottom-4 -left-4 bg-white shadow-lg rounded-lg py-2 px-4 flex items-center gap-3">
+                <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                  <Phone size={18} className="text-green-600" />
+                </div>
+                <div className="text-left">
+                  <div className="text-sm font-medium">Calls Handled</div>
+                  <div className="text-2xl font-bold text-green-600">258/day</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
