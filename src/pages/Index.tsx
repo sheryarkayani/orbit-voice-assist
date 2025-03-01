@@ -11,7 +11,18 @@ import HeroAnimation from '@/components/HeroAnimation';
 import FlowChartAnimation from '@/components/FlowChartAnimation';
 import IntegrationAnimation from '@/components/IntegrationAnimation';
 import Button from '@/components/Button';
-import { ArrowRight, ChevronRight, DollarSign, HeadphonesIcon, Headset, Zap } from 'lucide-react';
+import { 
+  ArrowRight, 
+  ChevronRight, 
+  DollarSign, 
+  Mic, 
+  ShoppingBag, 
+  Phone, 
+  Headphones, 
+  Speech, 
+  Package,
+  Zap 
+} from 'lucide-react';
 
 const Index = () => {
   useEffect(() => {
@@ -55,14 +66,15 @@ const Index = () => {
         <div className="orbit-container relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
-              <div className="inline-block px-3 py-1 rounded-full bg-orbit-purple/10 text-orbit-purple text-sm font-medium mb-4 animate-fade-in">
-                AI Voice Automation for Shopify
+              <div className="inline-flex items-center px-3 py-1 rounded-full bg-orbit-purple/10 text-orbit-purple text-sm font-medium mb-4 animate-fade-in">
+                <Mic size={14} className="mr-2" />
+                AI Voice Assistant for Shopify Stores
               </div>
               <h1 className="orbit-heading mb-6 opacity-0 animate-fade-in">
-                Automate 80% of Customer Queries. <span className="text-gradient">Focus on Growth.</span>
+                <span className="text-gradient">Voice AI</span> That Handles 80% of Customer Queries
               </h1>
               <p className="orbit-subheading opacity-0 animate-fade-in stagger-1">
-                Orbit's AI voice assistant handles returns, order tracking, and FAQs for Shopify brands—24/7.
+                Orbit's voice AI answers calls 24/7, handling order tracking, returns, and FAQs—letting your Shopify store scale support without scaling costs.
               </p>
               <div className="mt-8 flex flex-wrap gap-4 opacity-0 animate-fade-in stagger-2">
                 <Button variant="primary" size="lg" icon>Start Free Trial</Button>
@@ -79,11 +91,8 @@ const Index = () => {
                   </span>
                   <span className="w-1 h-1 rounded-full bg-gray-300"></span>
                   <span className="flex items-center text-green-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-1">
-                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                    </svg>
-                    Set up in minutes
+                    <ShoppingBag size={16} className="mr-1" />
+                    Works with any Shopify store
                   </span>
                 </div>
               </div>
@@ -106,8 +115,8 @@ const Index = () => {
       <section id="features" className="orbit-section relative">
         <div className="orbit-container">
           <SectionHeading 
-            title="Cut Costs. Boost Satisfaction."
-            subtitle="Replace repetitive support tasks with an AI assistant that gets smarter over time while you focus on growing your business."
+            title="AI Voice Support That Never Sleeps"
+            subtitle="Replace repetitive support calls with an AI voice assistant that understands your products, policies, and customers—all integrated with your Shopify store."
             centered
           />
           
@@ -115,19 +124,19 @@ const Index = () => {
             <BenefitCard 
               icon={DollarSign}
               title="Cut support costs by 40%"
-              description="Reduce your customer service team's workload by automating routine inquiries and support requests."
+              description="Automate phone support for common queries like order status, shipping details, and returns—saving thousands monthly."
               delay={100}
             />
             <BenefitCard 
-              icon={Headset}
-              title="Answer 500+ daily queries"
-              description="Handle high volumes of customer questions without hiring additional support staff or burning out your team."
+              icon={Phone}
+              title="Handle 500+ daily calls"
+              description="Our AI voice assistant answers customer calls 24/7, providing Shopify order information in real-time without human intervention."
               delay={200}
             />
             <BenefitCard 
-              icon={Zap}
-              title="Integrate with Shopify in 2 clicks"
-              description="Seamlessly connects with your Shopify store, automatically importing products, orders, and customer data."
+              icon={ShoppingBag}
+              title="2-click Shopify integration"
+              description="Connect to your Shopify store instantly with our official app. All product, order, and customer data syncs automatically."
               delay={300}
             />
           </div>
@@ -144,27 +153,27 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <SectionHeading 
-                title="Up and Running in One Hour"
-                subtitle="No technical knowledge required. Set up Orbit in three simple steps and start providing automated customer support immediately."
+                title="Shopify Voice AI in 3 Simple Steps"
+                subtitle="Deploy your AI voice assistant in under an hour. No technical knowledge required—just connect your Shopify store and go live."
               />
               
               <div className="mt-8 space-y-6">
                 <StepCard 
                   number={1}
-                  title="Connect Orbit to Shopify"
-                  description="One-click integration imports all your products, orders, and policies."
+                  title="Connect your Shopify store"
+                  description="One-click OAuth integration imports all your products, orders, customers, and policies."
                   delay={100}
                 />
                 <StepCard 
                   number={2}
-                  title="Train AI with your FAQs"
-                  description="Upload your return policy, FAQs, or let Orbit automatically learn from your store."
+                  title="Train your voice AI assistant"
+                  description="Upload your return policy, FAQs, or let Orbit automatically learn from your Shopify store data."
                   delay={200}
                 />
                 <StepCard 
                   number={3}
-                  title="Go live in under an hour"
-                  description="Implement on your website and phone system with no coding required."
+                  title="Deploy your phone number"
+                  description="Get a dedicated phone line for your AI, or integrate with your existing Shopify store phone system."
                   delay={300}
                 />
               </div>
@@ -187,28 +196,28 @@ const Index = () => {
       <section id="testimonials" className="orbit-section">
         <div className="orbit-container">
           <SectionHeading 
-            title="Trusted by Growing Brands"
-            subtitle="See how Orbit is helping ecommerce businesses scale their customer support operations efficiently."
+            title="Trusted by Shopify Store Owners"
+            subtitle="See how Orbit's voice AI is helping ecommerce businesses scale their customer support without increasing headcount."
             centered
           />
           
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
             <TestimonialCard 
-              quote="Orbit reduced our support tickets by 70% during Black Friday. Our team could focus on complex issues while the AI handled routine questions."
+              quote="Orbit's voice AI handled 70% of our Black Friday support calls automatically. Customers got instant answers while my team focused on complex issues."
               author="Sarah Johnson"
               role="CEO"
-              company="Fashion Brand"
+              company="Fashion Outlet (Shopify Plus)"
               delay={100}
             />
             <TestimonialCard 
-              quote="We've been able to provide 24/7 support without hiring night shift staff. Our customers love getting instant answers at any hour."
+              quote="We're a small Shopify store that can now offer 24/7 phone support without hiring night staff. Our customers love getting instant answers at any hour."
               author="Michael Chen"
               role="Operations Director"
               company="Home Goods Co."
               delay={200}
             />
             <TestimonialCard 
-              quote="The ROI was immediate. We saw a 40% reduction in support costs within the first month while improving our customer satisfaction scores."
+              quote="The Shopify integration was seamless. Within a day, Orbit's voice AI knew all our products, shipping policies, and could answer complex customer questions."
               author="Jessica Williams"
               role="Customer Service Manager"
               company="Beauty Essentials"
@@ -218,7 +227,7 @@ const Index = () => {
           
           <div className="mt-16 text-center opacity-0 reveal-on-scroll">
             <a href="#case-studies" className="inline-flex items-center text-orbit-purple font-medium hover:text-orbit-darkPurple transition-colors">
-              Read customer case studies
+              Read Shopify success stories
               <ChevronRight size={16} className="ml-1" />
             </a>
           </div>
@@ -234,10 +243,10 @@ const Index = () => {
         <div className="orbit-container relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-6 opacity-0 animate-fade-in">
-              Scale Support. Save $15k/month.
+              Give Your Shopify Store a Voice
             </h2>
             <p className="text-xl text-white/80 mb-10 opacity-0 animate-fade-in stagger-1">
-              Join hundreds of Shopify brands automating their customer service and focusing on what matters most—growing their business.
+              Join hundreds of Shopify brands using AI voice automation to deliver 24/7 customer support while saving $15,000+ per month.
             </p>
             <div className="flex flex-wrap gap-4 justify-center opacity-0 animate-fade-in stagger-2">
               <button className="rounded-lg font-medium transition-all duration-300 py-4 px-8 inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-orbit-purple shadow-lg hover:shadow-xl">
