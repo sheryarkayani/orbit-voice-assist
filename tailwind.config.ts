@@ -128,13 +128,12 @@ export default {
       backgroundImage: {
         "hero-gradient": "linear-gradient(135deg, #6C5CE7 0%, #00C2FF 100%)",
         "card-gradient": "linear-gradient(145deg, rgba(108, 92, 231, 0.1) 0%, rgba(0, 194, 255, 0.1) 100%)",
-        "card-dark-gradient": "linear-gradient(145deg, rgba(108, 92, 231, 0.15) 0%, rgba(0, 194, 255, 0.15) 100%)",
         "cta-gradient": "linear-gradient(135deg, #6C5CE7 0%, #00C2FF 100%)",
       },
       boxShadow: {
-        'orbit': '0 20px 50px -15px rgba(108, 92, 231, 0.25)',
-        'orbit-sm': '0 10px 30px -10px rgba(108, 92, 231, 0.25)',
-        'orbit-hover': '0 25px 60px -10px rgba(108, 92, 231, 0.35)',
+        'orbit': '0 20px 50px -15px rgba(108, 92, 231, 0.15)',
+        'orbit-sm': '0 10px 30px -10px rgba(108, 92, 231, 0.15)',
+        'orbit-hover': '0 25px 60px -10px rgba(108, 92, 231, 0.25)',
       },
     },
   },

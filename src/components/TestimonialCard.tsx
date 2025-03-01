@@ -27,7 +27,7 @@ const TestimonialCard = ({
   return (
     <div 
       className={cn(
-        "p-8 rounded-2xl border border-white/5 bg-card shadow-orbit-sm hover:shadow-orbit transition-all duration-300 opacity-0 animate-fade-in",
+        "p-8 rounded-2xl border border-gray-100 bg-white shadow-orbit-sm hover:shadow-orbit transition-all duration-300 opacity-0 animate-fade-in",
         className
       )}
       style={animationDelay}

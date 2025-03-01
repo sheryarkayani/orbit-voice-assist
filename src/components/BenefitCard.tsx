@@ -32,7 +32,7 @@ const BenefitCard = ({
       )}
       style={animationDelay}
     >
-      <div className={cn("inline-flex items-center justify-center p-3 rounded-xl bg-gradient-to-br from-orbit-purple/20 to-orbit-blue/20 mb-5", iconColor)}>
+      <div className={cn("inline-flex items-center justify-center p-3 rounded-xl bg-gradient-to-br from-orbit-purple/10 to-orbit-blue/10 mb-5", iconColor)}>
         <Icon size={24} className="text-current" />
       </div>
       <h3 className="text-xl font-display font-semibold mb-3">{title}</h3>

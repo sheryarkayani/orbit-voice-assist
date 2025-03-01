@@ -7,14 +7,14 @@
 
 @layer base {
   :root {
-    --background: 225 25% 10%;
-    --foreground: 210 10% 98%;
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
 
-    --card: 225 25% 12%;
-    --card-foreground: 210 10% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
 
-    --popover: 225 25% 9%;
-    --popover-foreground: 210 10% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
 
     --primary: 248 71% 58%;
     --primary-foreground: 0 0% 100%;
@@ -22,17 +22,17 @@
     --secondary: 195 100% 50%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 225 25% 16%;
-    --muted-foreground: 210 10% 80%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
 
-    --accent: 225 25% 16%;
-    --accent-foreground: 210 10% 98%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 225 25% 16%;
-    --input: 225 25% 16%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
     --ring: 248 71% 58%;
 
     --radius: 1rem;
@@ -77,23 +77,23 @@
   
   .cta-button-secondary {
     @apply rounded-lg font-medium transition-all duration-300
-    py-3 px-6 inline-flex items-center gap-2 bg-transparent
-    hover:bg-white/5 text-white shadow-orbit-sm hover:shadow-orbit
-    border border-white/30 hover:border-white/60;
+    py-3 px-6 inline-flex items-center gap-2 bg-white
+    hover:bg-gray-50 text-orbit-purple shadow-orbit-sm hover:shadow-orbit
+    border border-orbit-purple;
   }
 
   .glass-card {
-    @apply bg-white/5 backdrop-blur-md border border-white/10 
+    @apply bg-white bg-opacity-[0.02] backdrop-blur-md border border-white border-opacity-10 
     rounded-2xl shadow-orbit transition-all duration-300;
   }
   
   .benefit-card {
-    @apply p-8 rounded-2xl bg-card-dark-gradient border border-white/5
+    @apply p-8 rounded-2xl bg-card-gradient border border-gray-100
     shadow-orbit-sm hover:shadow-orbit transition-all duration-300;
   }
   
   .nav-link {
-    @apply text-gray-300 hover:text-orbit-purple font-medium transition-colors;
+    @apply text-gray-600 hover:text-orbit-purple font-medium transition-colors;
   }
 }
 
@@ -119,13 +119,13 @@
 }
 
 .glow-purple {
-  background-color: rgba(108, 92, 231, 0.5);
+  background-color: rgba(108, 92, 231, 0.4);
   top: 20%;
   right: 15%;
 }
 
 .glow-blue {
-  background-color: rgba(0, 194, 255, 0.4);
+  background-color: rgba(0, 194, 255, 0.3);
   bottom: 10%;
   left: 10%;
 }
